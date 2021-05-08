@@ -1,0 +1,53 @@
+package b11720;
+
+import java.util.Scanner;
+
+public class main_11720 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        // 숫자의 개수 입력
+        int c = sc.nextInt();
+
+        sc.nextLine();
+        // 숫자 입력
+        String num = sc.nextLine();
+
+        sc.close();
+
+        System.out.println(num);
+        int sum = 0;
+
+
+        /*for(int i = 0; i < c; i++) {
+            sum += num.charAt(i) - '0';
+        }
+
+        System.out.print(sum);
+
+         */
+
+
+
+
+        // 0 제거
+        /*num = num.replaceAll("0", "");
+        System.out.println(num);
+
+        // str to int
+        //int n_num = Integer.parseInt(num);
+
+        // 자리 수 더하기
+        int t = 0;
+        for(int i = 0; i < num.length(); i++) {
+            t += (int)num.charAt(i) - 48;
+
+        }
+
+        // 결과 출력
+        System.out.println(t);
+
+         */
+    }
+}
