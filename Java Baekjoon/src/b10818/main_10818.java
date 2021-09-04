@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class main_10818 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int n = 0;
         int a = 0;
         int m = 0;
         int M = 0;
-        n = scanner.nextInt();
+        n = sc.nextInt();
 
-        a = scanner.nextInt();
+        a = sc.nextInt();
         m = a;
         M = a;
 
         for(int i = 1; i < n; i++) {
-            a = scanner.nextInt();
+            a = sc.nextInt();
             if (M < a) {
                 M = a;
             }
@@ -25,6 +25,10 @@ public class main_10818 {
                 m = a;
             }
         }
+        
         System.out.print(m + " " + M);
+
+
+        sc.close();
     }
 }

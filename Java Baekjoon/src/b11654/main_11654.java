@@ -14,5 +14,8 @@ public class main_11654 {
 
         // print to ASCII
         System.out.println((int)C);
+
+
+        sc.close();
     }
 }

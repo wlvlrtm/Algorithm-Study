@@ -40,5 +40,7 @@ public class main_1065 {
             }
         }
         System.out.println(han);
+
+        sc.close();
     }
 }

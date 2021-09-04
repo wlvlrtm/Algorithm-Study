@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class main_5622 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int result = 0;
 
@@ -24,28 +24,30 @@ public class main_5622 {
 
         // User Input
         String callNum;
-        callNum = scanner.next();
+        callNum = sc.next();
 
         // String Splint
         String[] cnSplint;
         cnSplint = callNum.split("");
 
 
-        Loop1 : // One by one from cnSplint's element
+        // One by one from cnSplint's element
         for (String num : cnSplint) {
-            Loop2 : // Checking about is it equals num with callNum; Loop in numToChar's row.
+            Loop1 : // Checking about is it equals num with callNum; Loop in numToChar's row.
             for (int i = 0; i < numToChar.length; i++) {
-                Loop3 : //  Checking about is it equals num with callNum; Loop in numToChar's column.
+                //  Checking about is it equals num with callNum; Loop in numToChar's column.
                 for (int j = 0; j < numToChar[0].length; j++) {
                     if (numToChar[i][j].equals(num)) {  // if num and callNum is equal,
                         result += (i + 3);      // cal. time
 
-                        break Loop2;            // break
+                        break Loop1;            // break
                     }
                 }
             }
         }
 
         System.out.println(result);   // Print Result
+
+        sc.close();
     }
 }

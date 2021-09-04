@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class main_1316 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // group words count
         int result = 0;
 
         // User Input; number of words
-        int count = input.nextInt();
+        int count = sc.nextInt();
 
 
         // User Input; words
         for (int i = 0; i < count; i++) {
-            String word = input.next();
+            String word = sc.next();
 
             if (check(word)) {
                 result += 1;
@@ -25,6 +25,9 @@ public class main_1316 {
 
         // Result print
         System.out.println(result);
+
+
+        sc.close();
     }
 
 

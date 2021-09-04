@@ -9,10 +9,10 @@ public class main_2562 {
         int max = 0;
         int indx = 1;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         for(int i = 0; i <= 8; i++) {    // int num input
-            list[i] = scanner.nextInt();
+            list[i] = sc.nextInt();
         }
 
         max = list[0];
@@ -26,5 +26,8 @@ public class main_2562 {
 
         System.out.println(max);
         System.out.println(indx);
+
+
+        sc.close();
     }
 }

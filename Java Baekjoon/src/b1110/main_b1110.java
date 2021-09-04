@@ -25,5 +25,7 @@ public class main_b1110 {
                 break;
             }
         }
+
+        sc.close();
     }
 }

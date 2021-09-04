@@ -26,5 +26,8 @@ public class main_11720 {
 
         // 결과 출력
         System.out.println(t);
+
+
+        sc.close();
     }
 }

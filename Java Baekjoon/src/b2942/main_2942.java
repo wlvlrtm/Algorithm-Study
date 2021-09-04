@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class main_2942 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int count = 0;
 
         // User Input
-        String str = input.nextLine();
+        String str = sc.nextLine();
 
 
         // find Croatia's alphabets
@@ -61,5 +61,8 @@ public class main_2942 {
 
         // Result
         System.out.println(count);
+
+
+        sc.close();
     }
 }

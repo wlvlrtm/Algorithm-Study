@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class main_2908 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
 
         // 사용자 입력; 상수 2개
-        String num_A = scanner.next();
-        String num_B = scanner.next();
+        String num_A = sc.next();
+        String num_B = sc.next();
 
         // 상수 슬라이싱
         String[] list_A = num_A.split("");
@@ -42,5 +42,8 @@ public class main_2908 {
         else {
             System.out.print(result_B);
         }
+
+
+        sc.close();
     }
 }

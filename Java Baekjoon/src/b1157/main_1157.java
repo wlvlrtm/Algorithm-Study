@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class main_1157 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int max = -1;               // 가장 많은 알파벳
         char ch = '?';             // 가장 많은 알파벳이 중복일 경우
@@ -12,7 +12,7 @@ public class main_1157 {
 
         int[] arr = new int[26];    // 영문자 26자리 배열
 
-        String word = scanner.next();   // 단어 입력 Ex) zZa
+        String word = sc.next();   // 단어 입력 Ex) zZa
 
 
         // 단어 검사
@@ -39,5 +39,8 @@ public class main_1157 {
         }
 
         System.out.println(ch); // 결과 출력
+
+
+        sc.close();
     }
 }

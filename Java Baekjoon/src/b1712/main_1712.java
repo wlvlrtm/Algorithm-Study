@@ -10,11 +10,11 @@ public class main_1712 {
 
 
         // User Input.
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        cost_A = input.nextInt();
-        cost_B = input.nextInt();
-        cost_C = input.nextInt();
+        cost_A = sc.nextInt();
+        cost_B = sc.nextInt();
+        cost_C = sc.nextInt();
 
 
         // Break-Even Point Cal.
@@ -25,5 +25,8 @@ public class main_1712 {
             int num = cost_A / (cost_C - cost_B);
             System.out.println(num+1);
         }
+
+
+        sc.close();
     }
 }

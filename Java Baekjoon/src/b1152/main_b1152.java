@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class main_b1152 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String word = scanner.nextLine().trim();   // User Input
+        // User Input
+        String word = sc.nextLine().trim();   
 
         if (word.isEmpty()) {
             System.out.println(0);
@@ -16,5 +17,7 @@ public class main_b1152 {
             String[] words = word.split(" ");
             System.out.println(words.length);
         }
+
+        sc.close();
     }
 }
