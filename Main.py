@@ -1,5 +1,6 @@
 from Sort.BubbleSort import *
 from Sort.ShakerSort import *
+from Sort.StraightSelectionSort import *
 from typing import Any
 import copy
 
@@ -8,7 +9,6 @@ import copy
 class Main :
     def main() -> None :
         """ Main Method """
-        
         
         print("Bubble Sort")
         print("--Original--")
@@ -28,6 +28,7 @@ class Main :
         print("//////////")
         print()
 
+
         print("Shaker Sort")
         print("--Original--")
         ShakerSort.Shaker([9, 1, 3, 4, 6, 7, 8])
@@ -36,6 +37,14 @@ class Main :
         print("//////////")
         print()
 
+
+        print("Selection Sort")
+        print("--Original--")
+        StraightSelectionSort.Selection([3, 4, 2, 3, 1])
+        print("-----")
+        print()
+        print("//////////")
+        print()
 
 
 
