@@ -1,6 +1,7 @@
 from Sort.BubbleSort import *
 from Sort.ShakerSort import *
 from Sort.StraightSelectionSort import *
+from Sort.InsertionSort import *
 from typing import Any
 import copy
 
@@ -46,6 +47,19 @@ class Main :
         print("//////////")
         print()
 
+
+        print("Insertion Sort")
+        print("--Straight Ver--")
+        InsertionSort.StraightInsertion([6, 4, 1, 7, 3, 9, 8])
+        print("-----")
+        print()
+
+        print("--Binary Ver--")
+        InsertionSort.BinaryInsertion([6, 4, 1, 7, 3, 9, 8])
+        print("-----")
+        print()
+        print("//////////")
+        print()
 
 
 
