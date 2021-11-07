@@ -2,7 +2,7 @@ from typing import MutableSequence
 from typing import Any
 
 
-class BubbleSort :
+class Lab8_BubbleSort :
     def Bubble(lst: MutableSequence) -> MutableSequence :
         """ Bubble Sort Algorithm; Original """
         

@@ -1,7 +1,7 @@
 ﻿from typing import MutableSequence
 from typing import Any
 
-class StraightSelectionSort :
+class Lab8_StraightSelectionSort :
     def Selection(lst: MutableSequence) -> MutableSequence :
         """ StraightSelectionSort Original """
 

@@ -1,7 +1,7 @@
 from typing import MutableSequence
 from typing import Any
 
-class InsertionSort :
+class Lab8_InsertionSort :
     def StraightInsertion(lst: MutableSequence) -> MutableSequence :
         """ Straight Insertion Sort Ver """
 

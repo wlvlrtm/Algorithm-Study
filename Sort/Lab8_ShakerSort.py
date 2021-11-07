@@ -3,7 +3,7 @@ from typing import Any
 
 
 
-class ShakerSort :
+class Lab8_ShakerSort :
     def Shaker(lst: MutableSequence) -> MutableSequence :
         """ Shaker Sort Original """
 
