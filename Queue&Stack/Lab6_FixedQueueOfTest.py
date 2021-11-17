@@ -5,7 +5,7 @@ from Lab6_FixedQueue import FixedQueue
 Menu = Enum('Menu', ['Enque', 'Deque', 'Pick', 'Search', 'Dump', 'Exit'])
 
 def selectMenu() -> Menu:
-    """ ¸Ş´º ¼±ÅÃ """
+    """ ë©”ë‰´ ì„ íƒ """
     slc = [f'({m.value}){m.name}' for m in Menu]
     
     while True:
@@ -19,7 +19,7 @@ def selectMenu() -> Menu:
 s = FixedQueue(64)
 
 while True:
-    print(f'ÇöÀç µ¥ÀÌÅÍ °³¼ö: {len(s)} / {s.capacity}')
+    print(f'í˜„ì¬ ë°ì´í„° ê°œìˆ˜: {len(s)} / {s.capacity}')
     menu = selectMenu()
     
     if (menu == Menu.Enque) :
