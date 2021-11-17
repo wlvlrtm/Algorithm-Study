@@ -1,8 +1,8 @@
-# 고정 길이 스택 클래스
+﻿# 고정 길이 스택 클래스
 
 from typing import Any
 
-class Lab6_FixedStack :
+class Stack :
     """ 고정 길이 스택 클래스 """
 
     def __init__(self, capacity: int = 256) -> None : ## int capacity = 256

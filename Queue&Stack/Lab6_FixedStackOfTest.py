@@ -4,7 +4,7 @@ from Lab6_FixedStack import FixedStack
 Menu = Enum('Menu', ['Push', 'Pop', 'Pick', 'Search', 'Dump', 'Exit'])
 
 def selectMenu() -> Menu:
-    """ ¸Ş´º ¼±ÅÃ """
+    """ ë©”ë‰´ ì„ íƒ """
     slc = [f'({m.value}){m.name}' for m in Menu]
     
     while True:
@@ -18,7 +18,7 @@ def selectMenu() -> Menu:
 s = FixedStack(64)
 
 while True:
-    print(f'ÇöÀç µ¥ÀÌÅÍ °³¼ö: {len(s)} / {s.capacity}')
+    print(f'í˜„ì¬ ë°ì´í„° ê°œìˆ˜: {len(s)} / {s.capacity}')
     menu = selectMenu()
     
     if (menu == Menu.Push) :
