@@ -1,9 +1,15 @@
-def factorial(n: int) -> int:
-    """ 양의 정수 n의 팩토리얼 값을 재귀함수로 계산 """
-    if (n > 0) :
-        return n * factorial(n - 1)
-    else :
-        return 1
+from typing import Any
 
-if __name__ == "__main__" :
-    print(factorial(3))
+
+class Lab7_Factorial :
+    """ Cal. Fectorial """
+    
+    def factorial(n: int) -> int :
+        if (n > 0) :
+            return n * Lab7_Factorial.factorial(n-1)   ## n! == n * (n - 1)!
+        else :
+            return 1                    ## (n <= 0)
+
+
+if (__name__ == "__main__") :
+    print(Lab7_Factorial.factorial(3))

@@ -48,7 +48,7 @@ class Lab8_InsertionSort :
                     break
             ## END Binary Search in Sorted Area END ##
 
-            for j in range(i, pd, -1) :
+            for j in range(i, pd, -1) :     ## key ~ pd
                 lst[j] = lst[j-1]
             lst[pd] = key
             print(lst)

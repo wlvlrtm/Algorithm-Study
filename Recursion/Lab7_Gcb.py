@@ -1,12 +1,16 @@
-def gcd(x: int, y: int) -> int :
-    """ 정수 x와 y 사이의 최대 공약수 반환 """
-    ## 22 % 8 = 6
-    ## 8 % 6 = 2
-    if (y == 0) :
-        return x
-    else :
-        return gcd(y, x % y)    ## 22, 8 -> 8, 6
+from typing import Any
 
-if __name__ == "__main__" :
-    print(gcd(22, 8))
-    
+
+class Lab7_Gcb :
+    """ GCB Cal."""
+
+    def Gcb(x: int, y: int) -> int :
+        if (y == 0) :
+            return x
+        else :
+            return Lab7_Gcb.Gcb(y, x % y)
+
+
+
+if (__name__ == "__main__") :
+    print(Lab7_Gcb.Gcb(22, 8))
