@@ -1,14 +1,20 @@
 ## 색종이
 n = int(input())
-lx = list()
-t = (100 * n)
+l = list()
 
-for i in range(0, n) :
+for i in range(0, 100) :
+    l.append([0] * 100)
+
+for j in range(0, n) :
     x, y = map(int, input().split())
-    px = [x, x + 10]
-    lx.append(px)
 
-print(lx)
+    for k in range(y, y+10) :
+        for p in range(x, x+10) :
+            l[k][p] = 1
 
-## a < c < b < d
-## c < a < d < b
+r = 0
+
+for o in range(0, 100) :
+    r += l[o].count(1)
+
+print(r)
