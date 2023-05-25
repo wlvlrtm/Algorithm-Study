@@ -1,6 +1,6 @@
 package b15596;
 
-public class main_15596 {
+public class Main {
 
     long sum(int[] a) {
         int y = 0;

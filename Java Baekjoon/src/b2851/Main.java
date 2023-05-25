@@ -2,7 +2,7 @@ package b2851;
 
 import java.util.Scanner;
 
-public class main_2851 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

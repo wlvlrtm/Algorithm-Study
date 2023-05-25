@@ -2,7 +2,7 @@ package b1712;
 
 import java.util.Scanner;
 
-public class main_1712 {
+public class Main {
     public static void main(String[] args) {
         int cost_A; // 1000
         int cost_B; // 70

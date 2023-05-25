@@ -1,6 +1,6 @@
 package b4673;
 
-public class main_4673 {
+public class Main {
     public static void main(String[] args) {
         // 셀프 넘버 점검 리스트
         boolean[] Num = new boolean[10000];

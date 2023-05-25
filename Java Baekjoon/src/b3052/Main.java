@@ -3,7 +3,7 @@ package b3052;
 import java.util.Scanner;
 import java.util.HashSet;
 
-public class main_3052 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         HashSet<Integer> hashSet = new HashSet<Integer>();

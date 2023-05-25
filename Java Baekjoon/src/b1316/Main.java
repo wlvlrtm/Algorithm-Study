@@ -2,7 +2,7 @@ package b1316;
 
 import java.util.Scanner;
 
-public class main_1316 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

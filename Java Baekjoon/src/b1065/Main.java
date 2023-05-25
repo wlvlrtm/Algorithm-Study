@@ -2,7 +2,7 @@ package b1065;
 
 import java.util.Scanner;
 
-public class main_1065 {
+public class Main {
     public static void main(String[] args) {
         int num;    // 사용자 입력 수
         int[] nums = new int[3]; // 자리 수 배열
