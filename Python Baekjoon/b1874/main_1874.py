@@ -4,10 +4,25 @@ import sys
 n = int(sys.stdin.readline())
 l = list()
 stk = []
-mx = 0
+cur = 1
 r = list()
 
 for _ in range(n) :
-    l.append(int(sys.stdin.readline()))
+    num = int(sys.stdin.readline())
 
+    while (cur <= num) :
+        stk.append(cur)
+        r.append('+')
+        cur += 1
 
+    if (stk[-1] == num) :
+        stk.pop()
+        r.append('-')
+    else :
+        print("NO")
+        cur = -1
+        break
+
+if (cur != -1) :
+    for i in r :
+        print(i)
