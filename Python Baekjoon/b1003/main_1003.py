@@ -1,10 +1,8 @@
 ## 피보나치 함수
 import sys
 
-global num0
-global num1
-
 def fibonacci(n : int) :
+    
 
 
 def main() :
@@ -14,7 +12,8 @@ def main() :
     for _ in range(t) :
         l.append(int(sys.stdin.readline().strip()))
 
-    
+    for i in l :
+        fibonacci(i)
 
 
 
