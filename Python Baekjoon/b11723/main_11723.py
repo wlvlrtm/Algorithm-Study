@@ -3,17 +3,15 @@ import sys
 
 def main() :
     s = set()
-    ts = {str(i) for i in range(1, 21)}
-    m = int(sys.stdin.readline())
+    m = int(sys.stdin.readline().strip())
 
     for _ in range(m) :
-        x = sys.stdin.readline().strip().split()
+        x = sys.stdin.readline().split()
 
         if (x[0] == "add") :
             s.add(x[1])
         elif (x[0] == "remove") :
-            if (x[1] in s) :
-                s.remove(x[1])
+            s.discard(x[1])
         elif (x[0] == "check") :
             if (x[1] in s) :
                 print(1)
@@ -21,14 +19,13 @@ def main() :
                 print(0)
         elif (x[0] == "toggle") :
             if (x[1] in s) :
-                s.remove(x[1])
+                s.discard(x[1])
             else :
                 s.add(x[1])
         elif (x[0] == "all") :
-            s = ts
+            s = {'4', '7', '18', '15', '9', '3', '10', '20', '17', '16', '6', '1', '8', '5', '11', '19', '13', '12', '14', '2'}
         elif (x[0] == "empty") :
             s = set()
-
 
 
 
