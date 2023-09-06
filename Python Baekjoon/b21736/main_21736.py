@@ -31,7 +31,6 @@ def main() :
     else :
         print(count)
 
-
 def dfs(table, v) :
     global visited
     global n, m
