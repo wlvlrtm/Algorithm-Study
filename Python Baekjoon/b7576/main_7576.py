@@ -3,12 +3,10 @@ import sys
 from collections import deque
 
 global m, n
-global visited
 global queue
 
 def main() :
     global m, n
-    global visited
     global queue
 
     m, n = map(int, sys.stdin.readline().split())
@@ -24,7 +22,6 @@ def main() :
 
 def bfs(box) :
     global m, n
-    global visited
     global queue
 
     day = 0
@@ -37,7 +34,9 @@ def bfs(box) :
         for i in range(4) :
             next_row, next_col = row + dir_row[i], col + dir_col[i]
 
-            if (0 <= next_col < n and 0 <= next_row < m and box[next_col][next_row] == 0) :
+            if (0 <= next_col < n and
+                0 <= next_row < m and
+                box[next_col][next_row] == 0) :
                 box[next_col][next_row] = box[col][row] + 1
                 queue.append([next_col, next_row])
 
