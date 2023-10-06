@@ -29,7 +29,7 @@ def bfs(q) :
 
         d = (num * 2) % 10000
         s = (num - 1) % 10000
-        l = (num // 1000) + (num % 1000) * 10
+        l = num // 1000 + (num % 1000) * 10
         r = num // 10 + (num % 10) * 1000
 
         if (num == b) :
@@ -42,7 +42,7 @@ def bfs(q) :
 
         if not (visited[s]) :
             visited[s] = True
-            q.append([d, command + 'S'])
+            q.append([s, command + 'S'])
 
         if not (visited[l]) :
             visited[l] = True
